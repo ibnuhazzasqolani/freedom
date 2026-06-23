@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>FAQ | FRDM Culture Apparel</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#525151;
+color:#000000;
+border: #f70b0b solid 2px;
+}
+
+/* NAVBAR */
+
+.navbar{
+    position: sticky;
+    top: 0;
+
+    z-index: 9999;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px 10%;
+
+    background:#000;
+
+    border-bottom:1px solid #d80505;
+}
+
+
+.logo{
+color:white;
+font-size:24px;
+font-weight:700;
+}
+
+.nav-links{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+.nav-links a{
+color:white;
+text-decoration:none;
+}
+
+/* HEADER */
+
+.faq-header{
+text-align:center;
+padding:80px 20px 50px;
+
+}
+
+.faq-header h1{
+font-size:48px;
+margin-bottom:15px;
+}
+
+.faq-header p{
+color:#070707e2;
+max-width:600px;
+margin:auto;
+}
+
+
+/* FAQ */
+
+.faq-container{
+max-width:900px;
+margin:auto;
+padding:20px;
+margin-bottom:80px;
+}
+
+.faq-item{
+background:white;
+margin-bottom:15px;
+border-radius:12px;
+overflow:hidden;
+box-shadow:0 4px 15px rgb(218, 218, 218);
+border: #f70b0b solid 2px;
+}
+
+.faq-question{
+width:100%;
+border:none;
+background:white;
+padding:22px;
+font-size:17px;
+font-weight:600;
+cursor:pointer;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.faq-question:hover{
+background:#fafafa;
+border: #000000e4 solid 2px solid;
+}
+
+.icon{
+font-size:24px;
+transition:0.3s;
+}
+
+.faq-answer{
+max-height:0;
+overflow:hidden;
+transition:max-height .4s ease;
+padding:0 22px;
+}
+
+.faq-answer p{
+padding-bottom:20px;
+color:#555;
+line-height:1.8;
+}
+
+.faq-item.active .faq-answer{
+max-height:300px;
+}
+
+.faq-item.active .icon{
+transform:rotate(45deg);
+}
+
+/* FOOTER */
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:40px;
+border: #f70b0b solid 2px;
+}
+
+@media(max-width:768px){
+
+.faq-header h1{
+font-size:34px;
+}
+
+.navbar{
+flex-direction:column;
+gap:15px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+<div class="logo">FRDM CULTURE</div>
+
+<ul class="nav-links">
+<li><a href="home page.html">Home</a></li>
+<li><a href="product.html">Products</a></li>
+<li><a href="rekomendasi.html">recomend</a></li>
+<li><a href="style-lab.html">Style Lab</a></li>
+</ul>
+
+</nav>
+
+
+<section class="faq-header">
+
+<h1 style="color:#ffffff">Frequently Asked Questions</h1>
+<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
+
+<p style="color: #fbfafa;">
+Temukan jawaban dari pertanyaan yang paling sering ditanyakan pelanggan FRDM Culture Apparel.
+</p>
+
+</section>
+
+<div class="faq-container">
+
+<!-- FAQ 1 -->
+
+<div class="faq-item">
+<button class="faq-question">
+Berapa lama proses pengerjaan custom?
+<span class="icon">+</span>
+</button>
+
+<div class="faq-answer">
+<p>
+Pengerjaan custom membutuhkan waktu sekitar 3–7 hari kerja tergantung jumlah pesanan dan tingkat kerumitan desain.
+</p>
+</div>
+</div>
+
+<!-- FAQ 2 -->
+
+<div class="faq-item">
+<button class="faq-question">
+Apakah saya bisa menggunakan desain sendiri?
+<span class="icon">+</span>
+</button>
+
+<div class="faq-answer">
+<p>
+Tentu. Anda dapat mengunggah desain sendiri melalui halaman Custom Studio dan tim kami akan membantu proses produksinya.
+</p>
+</div>
+</div>
+
+<!-- FAQ 3 -->
+
+<div class="faq-item">
+<button class="faq-question">
+Jika saya tidak punya desain bagaimana?
+<span class="icon">+</span>
+</button>
+
+<div class="faq-answer">
+<p>
+Kami menyediakan berbagai rekomendasi desain eksklusif yang dapat digunakan atau dimodifikasi sesuai kebutuhan Anda.
+</p>
+</div>
+</div>
+
+<!-- FAQ 4 -->
+
+<div class="faq-item">
+<button class="faq-question">
+Apakah ada minimal order?
+<span class="icon">+</span>
+</button>
+
+<div class="faq-answer">
+<p>
+Tidak ada minimal order. Anda dapat memesan mulai dari satu pcs untuk kebutuhan personal maupun jumlah besar untuk komunitas atau perusahaan.
+</p>
+</div>
+</div>
+
+<!-- FAQ 5 -->
+
+<div class="faq-item">
+<button class="faq-question">
+Bahan apa yang digunakan untuk kaos?
+<span class="icon">+</span>
+</button>
+
+<div class="faq-answer">
+<p>
+Kaos menggunakan bahan cotton premium yang nyaman, menyerap keringat, dan cocok digunakan untuk aktivitas sehari-hari.
+</p>
+</div>
+</div>
+
+<!-- FAQ 6 -->
+
+<div class="faq-item">
+<button class="faq-question">
+Bahan jeans yang digunakan apa?
+<span class="icon">+</span>
+</button>
+
+<div class="faq-answer">
+<p>
+Kami menggunakan bahan denim berkualitas tinggi dengan berbagai pilihan warna seperti dark blue, navy, black, dan washed denim.
+</p>
+</div>
+</div>
+
+<!-- FAQ 7 -->
+
+<div class="faq-item">
+<button class="faq-question">
+Metode custom apa saja yang tersedia?
+<span class="icon">+</span>
+</button>
+
+<div class="faq-answer">
+<p>
+Saat ini tersedia sablon DTF, bordir, patch custom, dan berbagai teknik finishing lainnya sesuai kebutuhan desain.
+</p>
+</div>
+</div>
+
+<!-- FAQ 8 -->
+
+<div class="faq-item">
+<button class="faq-question">
+Apakah bisa custom nama atau logo komunitas?
+<span class="icon">+</span>
+</button>
+
+<div class="faq-answer">
+<p>
+Bisa. Kami melayani custom nama pribadi, logo komunitas, organisasi, sekolah, maupun perusahaan.
+</p>
+</div>
+</div>
+
+<!-- FAQ 9 -->
+
+<div class="faq-item">
+<button class="faq-question">
+Apakah tersedia size besar?
+<span class="icon">+</span>
+</button>
+
+<div class="faq-answer">
+<p>
+Ya. Tersedia ukuran mulai dari S hingga XXXL untuk beberapa model tertentu.
+</p>
+</div>
+</div>
+
+<!-- FAQ 10 -->
+
+<div class="faq-item">
+<button class="faq-question">
+Bagaimana cara melakukan pemesanan?
+<span class="icon">+</span>
+</button>
+
+<div class="faq-answer">
+<p>
+tekan tombol custom now di halaman produk yg dipilih setelah itu akan langsung menuju ke whatssap admin dan silahkan konfirmasi dan jelaskan custom apa yg kamu inginkan 
+</p>
+</div>
+</div>
+
+<!-- FAQ 11 -->
+
+<div class="faq-item">
+<button class="faq-question">
+bagaimana cara menggunakan rekomendasi custom?
+<span class="icon">+</span>
+</button>
+
+<div class="faq-answer">
+<p>
+customer bisa screenshot atau menyebutkan nama jenis custom yang dipilih dari halaman rekomendasi lalu sertakan pada saat pemesanan lebih lanjut di whatssap
+</div>
+</div>
+
+
+</div>
+
+<footer>
+
+<h3>FRDM CULTURE APPAREL</h3>
+
+<p>Wear Your Freedom.</p>
+
+</footer>
+
+<script>
+
+const faqItems = document.querySelectorAll('.faq-item');
+
+faqItems.forEach(item => {
+
+const button = item.querySelector('.faq-question');
+
+button.addEventListener('click', () => {
+
+faqItems.forEach(other => {
+
+if(other !== item){
+other.classList.remove('active');
+}
+
+});
+
+item.classList.toggle('active');
+
+});
+
+});
+
+</script>
+
+</body>
+</html>

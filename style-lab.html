@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>FRDM Lookbook</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#1f1f1f;
+color:white;
+border: #ea0404 solid 2px;
+}
+
+/* NAVBAR */
+
+.navbar{
+background:black;
+padding:20px 10%;
+height: 11vh;
+display:flex;
+justify-content:space-between;
+align-items:center;
+border-bottom:1px solid #ea0404;
+}
+
+.logo{
+font-size:29px;
+font-weight:600;
+}
+
+.nav-links{
+display:flex;
+gap:20px;
+list-style:none;
+}
+
+.nav-links a{
+color:white;
+text-decoration:none;
+}
+.hero-lookbook{
+    position: relative;
+    height: 40vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+
+    overflow:hidden;
+
+    border-top:1px solid #d80505;
+    border-bottom:1px solid #d80505;
+}
+
+.hero-lookbook video{
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    z-index:-2;
+}
+
+.hero-lookbook::before{
+    content:"";
+
+    position:absolute;
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background:rgba(0,0,0,.55);
+
+    z-index:-1;
+}
+
+.hero-lookbook h1{
+    color:white;
+    font-size:60px;
+    font-weight:900;
+    text-align:center;
+}
+
+.hero-lookbook p{
+    color:white;
+    font-size:22px;
+    margin-top:15px;
+}
+
+
+/* SLIDER */
+
+.lookbook{
+padding:20px;
+}
+
+.look-title{
+text-align:center;
+font-size:30px;
+font-weight:600;
+margin-bottom:30px;
+color:white;
+}
+
+.slider-container{
+max-width:195px;
+margin:auto;
+position:relative;
+}
+
+.slider-image{
+
+width:100%;
+height:340px;
+
+object-fit:contain;
+
+background:#111;
+
+border:2px solid #ea0404;
+
+border-radius:15px;
+
+box-shadow:0 0 25px rgb(255, 255, 255);
+
+}
+
+.slider-description{
+text-align:center;
+font-size:15px;
+color:#ddd;
+margin-top:20px;
+}
+
+.slider-buttons{
+
+display:flex;
+
+justify-content:center;
+
+gap:10px;
+
+margin-top:30px;
+
+}
+
+.slider-buttons button{
+
+padding:15px 25px;
+
+font-size:24px;
+
+background:black;
+
+color:white;
+
+border:1px solid #ea0404;
+
+border-radius:10px;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+.slider-buttons button:hover{
+
+background:#ea0404;
+
+}
+
+/* COUNTER */
+
+.counter{
+
+text-align:center;
+
+margin-top:15px;
+
+font-size:18px;
+
+color:#aaa;
+
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.look-header h1{
+font-size:36px;
+}
+
+.look-title{
+font-size:28px;
+}
+
+.slider-image{
+height:450px;
+}
+
+}
+footer{
+background:black;
+color:white;
+padding:40px;
+text-align:center;
+margin-top:0px;
+border: #d80505 solid 2px;
+}
+
+
+</style>
+</head>
+
+<body>
+
+<nav class="navbar">
+
+<div class="logo">
+FRDM LOOKBOOK
+</div>
+
+<ul class="nav-links">
+<li><a href="home page.html">Home</a></li>
+<li><a href="product.html">Products</a></li>
+<li><a href="rekomendasi.html">Recomend</a></li>
+<li><a href="FAQ.html">FAQ</a></li>
+</ul>
+
+</nav>
+<section class="hero-lookbook">
+
+<video autoplay muted loop playsinline>
+
+<source src="assets/pac man .mp4" type="video/mp4">
+
+</video>
+
+<h1>FRDM LOOKS REFERENCE</h1>
+
+<p>
+Temukan inspirasi outfit terbaik untuk style kamu.
+</p>
+
+</section>
+
+<section class="lookbook">
+
+<h2 class="look-title" id="lookName">
+Classic Streetwear
+</h2>
+
+<div class="slider-container">
+
+<img
+id="lookImage"
+class="slider-image"
+src="assets/streatwear basic.jpeg"
+>
+
+<p
+id="lookDesc"
+class="slider-description">
+Boxy Oversize + Baggy Jeans
+</p>
+
+<div class="counter">
+<span id="counter">1 / 10</span>
+</div>
+
+<div class="slider-buttons">
+
+<button onclick="prevLook()">
+◀
+</button>
+
+<button onclick="nextLook()">
+▶
+</button>
+
+</div>
+
+</div>
+
+
+
+</section>
+<footer>
+
+<h3>FRDM CULTURE APPAREL</h3>
+
+<p>Made For Your Style.</p>
+
+</footer>
+
+<script>
+
+const looks = [
+
+{
+name:"streetwear basic",
+image:"assets/streatwear basic.jpeg",
+desc:"fitted tee + Baggy Jeans"
+},
+
+{
+name:"Korean Street Style",
+image:"assets/korean street.jpeg",
+desc:"Boxy Oversize + Loose Jeans"
+},
+
+{
+name:"clean casual",
+image:"assets/clean casual.jpeg",
+desc:"Regular Tee + Slim fit Jeans"
+},
+
+{
+name:"American Drip",
+image:"assets/american drip looks .jpeg",
+desc:"Boxy Oversize + Baggy Jeans"
+},
+
+{
+name:"dark minimalist",
+image:"assets/dark minimalist.jpeg",
+desc:"fitted tee + skinny Jeanis"
+},
+
+{
+name:"daily essential",
+image:"assets/daily essential.jpeg",
+desc:"Regular Tee + Slim straight Jeans"
+},
+
+{
+name:"Vintage Vibes",
+image:"assets/vintage vibes.jpeg",
+desc:"boxy Oversize + Flare Jeans"
+},
+
+{
+name:"Casual Chill",
+image:"assets/casual chill .jpeg",
+desc:"regular tee + Loose Jeans"
+},
+
+{
+name:"Smart Fit",
+image:"assets/smart fit.jpeg",
+desc:"Fitted Tee + Slim Fit Jeans"
+},
+
+{
+name:"Y2K Style",
+image:"assets/y2k looks.jpeg",
+desc:"Boxy Oversize + Flare Jeans"
+}
+
+];
+
+let current = 0;
+
+function updateLook(){
+
+document.getElementById("lookImage").src =
+looks[current].image;
+
+document.getElementById("lookName").innerText =
+looks[current].name;
+
+document.getElementById("lookDesc").innerText =
+looks[current].desc;
+
+document.getElementById("counter").innerText =
+(current + 1) + " / " + looks.length;
+
+}
+
+function nextLook(){
+
+current++;
+
+if(current >= looks.length){
+
+current = 0;
+
+}
+
+updateLook();
+
+}
+
+function prevLook(){
+
+current--;
+
+if(current < 0){
+
+current = looks.length - 1;
+
+}
+
+updateLook();
+
+}
+
+</script>
+
+</body>
+</html>

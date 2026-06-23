@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Products | FRDM Culture Apparel</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+
+.page-title{
+
+position:relative;
+
+height:280px;
+
+overflow:hidden;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+border:1px solid #d80505;
+
+}
+
+.page-video{
+
+position:absolute;
+
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+object-fit:cover;
+
+z-index:-2;
+
+}
+
+.page-title::before{
+
+content:"";
+
+position:absolute;
+
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+background:rgba(0,0,0,.60);
+
+z-index:-1;
+
+}
+
+.page-title-content{
+
+text-align:center;
+
+color:white;
+border: #d80505 solid 2px;
+box-shadow: #ddd 0px 5px 15px;
+
+}
+
+.page-title-content h1{
+
+font-size:60px;
+
+font-weight:800;
+
+letter-spacing:6px;
+
+text-transform:uppercase;
+
+margin-bottom:10px;
+
+text-shadow:
+0 0 20px rgba(255,255,255,.15),
+0 5px 20px rgba(0,0,0,.4);
+
+}
+
+.page-title-content p{
+
+font-size:22px;
+
+margin-top:10px;
+
+}
+
+.page-title-content h3{
+
+font-size:28px;
+
+margin-top:10px;
+
+font-weight:700;
+
+}
+
+.product-section{
+padding:40px 10%;
+background-color: rgb(46, 47, 47);
+}
+
+.product-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.product-card{
+background:white;
+border-radius:15px;
+box-shadow:0 5px 15px rgb(254, 254, 254);
+padding:20px;
+text-align:center;
+border: 2px solid #d80505;
+}
+
+.product-card img{
+width:100%;
+height:350px;
+object-fit:cover;
+border-radius:10px;
+}
+
+.product-card h3{
+margin:15px 0;
+}
+
+.color-list{
+display:flex;
+justify-content:center;
+gap:10px;
+margin-top:10px;
+}
+
+.color{
+width:25px;
+height:25px;
+border-radius:50%;
+border:1px solid #fcfbfb;
+}
+footer{
+background:black;
+color:white;
+padding:40px;
+text-align:center;
+margin-top:0px;
+border: #d80505 solid 2px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav class="navbar">
+<div class="logo">FRDM CULTURE</div>
+
+<ul class="nav-links">
+<li><a href="home page.html">Home</a></li>
+<li><a href="product.html">Products</a></li>
+<li><a href="style-lab.html">Style Lab</a></li>
+<li><a href="FAQ.html">FAQ</a></li>
+</ul>
+</nav>
+
+<section class="page-title">
+
+<video autoplay muted loop playsinline class="page-video">
+
+<source src="assets/lgshot.mp4" type="video/mp4">
+
+</video>
+
+<div class="page-title-content">
+
+<h1>Rekomendasi Custom</h1>
+
+<p>━━━━━━━━━━━━━━━━━━━━</p>
+
+<h3>Opsional</h3>
+
+</div>
+
+</section>
+
+<section class="product-section">
+
+<h2 style="margin-bottom:25px;color: #fcfafa;">korean streetwear</h2>
+
+<div class="product-grid">
+
+<div class="product-card">
+<img src="assets/korean style 1.jpg">
+
+
+</div>
+
+<div class="product-card">
+<img src="assets/korean style 3.jpg">
+</div>
+
+<div class="product-card">
+<img src="assets/korean style 2.jpg">
+</div>
+
+</div>
+
+</section>
+
+<section class="product-section">
+
+<h2 style="margin-bottom:25px;color: #fcfbfb;">american drip</h2>
+
+<div class="product-grid">
+
+<div class="product-card">
+<img src="assets/american drip 1.jpg">
+
+
+</div>
+
+<div class="product-card">
+<img src="assets/american drip 3.jpg">
+
+
+
+</div>
+
+<div class="product-card">
+<img src="assets/american drip 2.jpg">
+
+</div>
+</section>
+
+<section class="product-section">
+
+<h2 style="margin-bottom:25px;color: #fbf7f7;">Japanese Y2K & Gothic</h2>
+
+<div class="product-grid">
+
+<div class="product-card">
+<img src="assets/japanese 1.jpg">
+
+
+</div>
+
+
+<div class="product-card">
+<img src="assets/japanese 3.jpg">
+
+</div>
+
+<div class="product-card">
+<img src="assets/japanese.jpg">
+
+
+
+</div>
+
+
+
+
+</section>
+
+<section class="product-section">
+
+<h2 style="margin-bottom:25px;color: #fcfafa;">unique desain</h2>
+
+<div class="product-grid">
+
+<div class="product-card">
+<img src="assets/unik1.jpg">
+
+
+</div>
+
+<div class="product-card">
+<img src="assets/unik 3.jpg">
+</div>
+
+<div class="product-card">
+<img src="assets/unik 2.jpg">
+</div>
+
+</div>
+
+</section>
+
+<section class="product-section">
+
+<h2 style="margin-bottom:25px;color: #fcfbfb;">Art desain</h2>
+
+<div class="product-grid">
+
+<div class="product-card">
+<img src="assets/art 1.jpg">
+
+
+</div>
+
+<div class="product-card">
+<img src="assets/art 2.jpg">
+
+
+
+</div>
+
+<div class="product-card">
+<img src="assets/art 3.jpg">
+
+</div>
+</section>
+
+<section class="product-section">
+
+<h2 style="margin-bottom:25px;color: #fbf7f7;">bordir patch</h2>
+
+<div class="product-grid">
+
+<div class="product-card">
+<img src="assets/bordir.jpg">
+
+
+</div>
+
+
+<div class="product-card">
+<img src="assets/bordir 2.jpg">
+
+</div>
+
+<div class="product-card">
+<img src="assets/bordir 3.jpg">
+
+
+
+</div>
+
+
+
+</section>
+<footer>
+
+<h3>FRDM CULTURE APPAREL</h3>
+
+<p>Made For Your Style.</p>
+
+</footer>
+
+
+
+
+</body>
+</html>

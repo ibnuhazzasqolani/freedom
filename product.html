@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Products | FRDM Culture Apparel</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+.page-title{
+
+position:relative;
+
+height:280px;
+
+overflow:hidden;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+border:1px solid #d80505;
+
+}
+.page-video{
+
+position:absolute;
+
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+object-fit:cover;
+
+z-index:-2;
+
+}
+
+.page-title::before{
+
+content:"";
+
+position:absolute;
+
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+background:rgba(0,0,0,.55);
+
+z-index:-1;
+
+}
+
+.page-title-content{
+
+text-align:center;
+
+color:white;
+border: #fa0404 solid 2px;
+box-shadow: #ddd 0px 5px 15px;
+
+}
+
+.page-title-content h1{
+
+font-size:60px;
+
+font-weight:900;
+
+letter-spacing:4px;
+
+text-transform:uppercase;
+
+margin-bottom:10px;
+
+}
+
+.page-title-content h3{
+
+font-weight:380;
+
+margin-top:10px;
+
+}
+.btn{
+padding:10px 30px;
+background:rgb(255, 0, 0);
+color:black;
+text-decoration:none;
+border-radius:50px;
+font-weight:700;
+transition:.3s;
+box-shadow: #fdfcfc 0px 5px 15px;
+}
+
+.btn:hover{
+background:#ffffff;
+color:rgb(0, 0, 0);
+transform:translateY(-3px);
+}
+
+.product-section{
+padding:40px 10%;
+background-color: rgb(46, 47, 47);
+}
+
+.product-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.product-card{
+background:rgb(34, 33, 33);
+border-radius:15px;
+  box-shadow:0 5px 15px rgb(255, 255, 255);
+  padding:20px;
+  text-align:center;
+  border: 1px solid #d80505;
+  }
+
+.product-card img{
+width:100%;
+height:250px;
+object-fit:cover;
+border-radius:10px;
+border: 1px solid #d80505;
+}
+
+.product-card h3{
+margin:15px 0;
+}
+
+.color-list{
+display:flex;
+justify-content:center;
+gap:10px;
+margin-top:10px;
+}
+
+.color{
+width:25px;
+height:25px;
+border-radius:50%;
+border:1px solid #0d0d0d;
+}
+.custom-btn{
+display:inline-block;
+margin-top:15px;
+padding:12px 24px;
+background:#fa0404;
+color:#ffffff;
+text-decoration:none;
+border-radius:8px;
+font-weight:600;
+transition:.3s;
+}
+
+.custom-btn:hover{
+background:#000000;
+transform:translateY(-3px);
+box-shadow:0 10px 20px rgba(255, 255, 255, 0.25);
+}
+footer{
+background:black;
+color:white;
+padding:40px;
+text-align:center;
+margin-top:0px;
+border: #d80505 solid 2px;
+}
+
+
+</style>
+
+</head>
+
+<body>
+
+<nav class="navbar">
+<div class="logo">FRDM CULTURE</div>
+
+<ul class="nav-links">
+<li><a href="home page.html">Home</a></li>
+<li><a href="rekomendasi.html">recomend</a></li>
+<li><a href="style-lab.html">Style Lab</a></li>
+<li><a href="faq.html">FAQ</a></li>
+</ul>
+</nav>
+
+
+<section class="page-title">
+
+<video autoplay muted loop playsinline class="page-video">
+
+<source src="assets/wayf2.mp4" type="video/mp4">
+
+</video>
+
+<div class="page-title-content">
+
+<h1>Pilihan Produk</h1>
+
+
+
+<a href="assets/CATALOG FRDM CULTURE.pdf" class="btn">
+lihat katalog
+</a>
+
+</div>
+
+</section>
+
+<section class="product-section">
+
+<h2 style="margin-bottom:25px;color: #ddd;">T-Shirt Collection</h2>
+
+<div class="product-grid">
+
+<div class="product-card">
+<img src="assets/fitted tee.jpeg">
+
+<h3>Fitted Tee</h3>
+
+<p>Body fit & modern look.</p>
+<p>RP.150.000-300.000</p>
+<p>tersedia ukuran s-xxl</p>
+<div class="color-list">
+<div class="color" style="background:black;"></div>
+<div class="color" style="background:white;"></div>
+<div class="color" style="background:gray;"></div>
+<div class="color" style="background:rgba(160, 87, 9, 0.064);"></div>
+</div>
+<h3>(harga tergantung custom)<h3>
+<a href="#"
+class="custom-btn"
+data-product="Fitted Tee">
+
+Custom Now
+
+</a>
+
+</div>
+
+
+<div class="product-card">
+<img src="assets/boxy oversize .jpeg">
+
+<h3>Boxy oversize</h3>
+
+<p>Streetwear oversize fit.</p>
+<p>RP.150.000-300.000</p>
+<p>tersedia ukuran s-xxl</p>
+<div class="color-list">
+<div class="color" style="background:black;"></div>
+<div class="color" style="background:white;"></div>
+<div class="color" style="background:gray;"></div>
+<div class="color" style="background:rgba(160, 87, 9, 0.064);"></div>
+</div>
+<h3>(harga tergantung custom)<h3>
+<a href="#"
+class="custom-btn"
+data-product="Boxy Crop">
+
+Custom Now
+
+</a>
+
+</div>
+
+<div class="product-card">
+<img src="assets/regular fit.jpeg">
+
+<h3>regular fit</h3>
+
+<p>clasic premium fit.</p>
+<p>RP.130.000-300.000</p>
+<p>tersedia ukuran s-xxl</p>
+<div class="color-list">
+<div class="color" style="background:black;"></div>
+<div class="color" style="background:white;"></div>
+<div class="color" style="background:gray;"></div>
+<div class="color" style="background:rgba(160, 87, 9, 0.064);"></div>
+</div>
+<h3>(harga tergantung custom)<h3>
+<a href="#"
+class="custom-btn"
+data-product="Regular Fit">
+
+Custom Now
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="product-section">
+
+<h2 style="margin-bottom:25px;color: #fdfcfc;">Jeans Collection</h2>
+
+<div class="product-grid">
+
+<div class="product-card">
+<img src="assets/baggy jeans.jpeg">
+
+<h3>Baggy Jeans</h3>
+
+<p>baggy streetwear silhouette.</p>
+<p>RP.300.000-700.000</p>
+<p>tersedia ukuran s-xxl</p>
+<h3>(harga tergantung custom)<h3>
+<a href="#"
+class="custom-btn"
+data-product="Baggy Jeans">
+
+Custom Now
+
+</a>
+</div>
+
+<div class="product-card">
+<img src="assets/loose jeans.jpeg">
+
+<h3>Loose Jeans</h3>
+
+
+<p>Tight & fashionable.</p>
+<p>RP.250.000-700.000</p>
+<p>tersedia ukuran s-xxl</p>
+<h3>(harga tergantung custom)<h3>
+<a href="#"
+class="custom-btn"
+data-product="loose jeans">
+
+Custom Now
+
+</a>
+</div>
+
+<div class="product-card">
+<img src="assets/slim fit jeans.jpeg">
+
+<h3>Slim Fit Jeans</h3>
+
+<p>Modern slim look.</p>
+<p>RP.180.000-500.000</p>
+<p>tersedia ukuran s-xxl</p>
+<h3>(harga tergantung custom)<h3>
+<a href="#"
+class="custom-btn"
+data-product="slim fit jeans">
+
+Custom Now
+
+</a>
+</div>
+
+<div class="product-card">
+<img src="assets/slim straigth.jpeg">
+<h3>Slim Straight Jeans</h3>
+<p>Classic fit style.</p>
+<p>RP.250.000-500.000</p>
+<p>tersedia ukuran s-xxl</p>
+<h3>(harga tergantung custom)</h3>
+<a href="#"
+class="custom-btn"
+data-product="slim straigth Jeans">
+
+Custom Now
+
+</a>
+</div>
+
+<div class="product-card">
+  
+<img src="assets/skinny jeans .jpeg">
+<h3>Skinny jeans</h3>
+<p>clasic look.</p>
+<p>RP.150.000-300.000</p>
+<p>tersedia ukuran s-xxl</p>
+<h3>(harga tergantung custom)</h3>
+<a href="#"
+class="custom-btn"
+data-product="skinny jeans">
+
+Custom Now
+
+</a>
+</div>
+<div class="product-card">
+  
+<img src="assets/flare jeans.jpeg">
+<h3>flare jeans</h3>
+<p>clasic vintage look.</p>
+<p>RP.250.000-700.000</p>
+<p>tersedia ukuran s-xxl</p>
+<h3>(harga tergantung custom)</h3>
+<a href="#"
+class="custom-btn"
+data-product="flare jeans">
+
+Custom Now
+</a>
+
+</div>
+
+
+</section>
+<footer>
+
+<h3>FRDM CULTURE APPAREL</h3>
+
+<p>Made For Your Style.</p>
+
+</footer>
+<script>
+
+const buttons =
+document.querySelectorAll(".custom-btn");
+
+buttons.forEach(button => {
+
+button.addEventListener("click", function(e){
+
+e.preventDefault();
+
+const product =
+this.dataset.product;
+
+const phone =
+"6285811834307";
+
+const message =
+`Halo Admin FRDM Culture Apparel,
+
+Saya tertarik memesan
+
+nama:
+
+alamat:
+
+Produk : ${product}
+
+warna :
+
+ukuran: 
+
+jenis custom :
+
+Mohon info detail harga, pilihan warna, dan proses customnya.
+
+Terima kasih.`;
+
+const url =
+`https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+
+window.open(url, "_blank");
+
+});
+
+});
+
+</script>
+
+</body>
+</html>
